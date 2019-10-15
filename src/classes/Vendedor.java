@@ -126,6 +126,15 @@ public class Vendedor {
 		
 	}
 	
+	
+	public double calculaComissao() {
+		
+		this.salario += (totalVenda() * comissao) / 100;
+		
+		return this.salario;
+		
+	}
+	
 	public String toString() {
 		
 		String s = "";
